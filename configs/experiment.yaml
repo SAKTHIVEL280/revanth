@@ -1,0 +1,21 @@
+data:
+  start: "2023-07-01"          # both classes restricted to this window for timestamp parity
+  phishtank_url: https://raw.githubusercontent.com/Sky-ey/mirror-phishtank/main/hosts.csv
+  cc_shards_per_crawl: 60      # Common Crawl index shards sampled per crawl
+  cc_urls_per_shard: 60
+  cc_bytes_per_shard: 700000
+  max_urls_per_host: 2
+split:
+  train: 0.65
+  val: 0.15                    # test = remainder (final 20%)
+model:
+  seed: 42
+  lgbm: {n_estimators: 600, learning_rate: 0.05, num_leaves: 63, min_child_samples: 30,
+         subsample: 0.8, subsample_freq: 1, colsample_bytree: 0.8, reg_lambda: 1.0}
+  ensemble_seeds: [1, 2, 3, 4, 5]
+selective:
+  target_risk: 0.02            # max selective error tolerated on validation
+  min_coverage: 0.5
+calibration:
+  bucket: M                    # time-stratified buckets (monthly); fallback to global
+  min_bucket: 300

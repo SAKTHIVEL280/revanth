@@ -1,0 +1,18 @@
+{
+  "t_train_end": "2025-12-16 15:43:20.300000+00:00",
+  "t_val_end": "2026-06-07 03:40:43.400000+00:00",
+  "best_params": {
+    "n_estimators": 54,
+    "learning_rate": 0.08,
+    "num_leaves": 127,
+    "min_child_samples": 30,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 1.0
+  },
+  "calibrator": "isotonic",
+  "conf_thr": 0.6667,
+  "entropy_limit": 0.6364910608887525,
+  "ens_std_limit": 0.11037769757606956
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "case": "phishing",
+    "url_defanged": "hxxps://spectrumdsomains[.]weebly[.]com/",
+    "p_cal": 0.999999,
+    "evidence": [
+      {
+        "feature": "dom_phish_30d",
+        "value": 109.0,
+        "shap": 2.912063779513888,
+        "direction": "towards PHISHING"
+      },
+      {
+        "feature": "dom_phish_7d",
+        "value": 11.0,
+        "shap": 0.8221470764561634,
+        "direction": "towards PHISHING"
+      },
+      {
+        "feature": "tld_seen",
+        "value": 30316.0,
+        "shap": -0.4449329485204931,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "path_len",
+        "value": 1.0,
+        "shap": 0.311670478275692,
+        "direction": "towards PHISHING"
+      },
+      {
+        "feature": "host_reg_ratio",
+        "value": 2.700000047683716,
+        "shap": 0.2703655389974392,
+        "direction": "towards PHISHING"
+      }
+    ]
+  },
+  {
+    "case": "benign",
+    "url_defanged": "hxxp://old[.]rlolift[.]ru/ru/press/news/sendvalues/more/1208",
+    "p_cal": 0.03529411764705882,
+    "evidence": [
+      {
+        "feature": "dom_phish_30d",
+        "value": 0.0,
+        "shap": -2.6812203694640018,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "dom_phish_7d",
+        "value": 0.0,
+        "shap": -0.7486054668754609,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "tld_phish_ratio",
+        "value": 0.031790412962436676,
+        "shap": -0.3536848477176118,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "tld_phish_30d",
+        "value": 1.0,
+        "shap": -0.32353272043900966,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "n_hyphen",
+        "value": 0.0,
+        "shap": 0.2017550784203389,
+        "direction": "towards PHISHING"
+      }
+    ]
+  },
+  {
+    "case": "uncertain",
+    "url_defanged": "hxxps://izu-implant[.]com/profile",
+    "p_cal": 0.4275184275184276,
+    "evidence": [
+      {
+        "feature": "dom_phish_30d",
+        "value": 0.0,
+        "shap": -2.6188958220232474,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "tld_phish_30d",
+        "value": 260.0,
+        "shap": 0.9820095666912253,
+        "direction": "towards PHISHING"
+      },
+      {
+        "feature": "dom_phish_7d",
+        "value": 0.0,
+        "shap": -0.731405124132945,
+        "direction": "towards BENIGN"
+      },
+      {
+        "feature": "path_len",
+        "value": 8.0,
+        "shap": 0.5961055717660158,
+        "direction": "towards PHISHING"
+      },
+      {
+        "feature": "tld_seen",
+        "value": 31250.0,
+        "shap": -0.23345855735502996,
+        "direction": "towards BENIGN"
+      }
+    ]
+  }
+]

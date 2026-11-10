@@ -1,0 +1,2 @@
+,coverage,selective_risk,full_risk,phish_recall_accepted,phish_auto_caught,phish_deferred,phish_missed_auto,benign_false_alarm_auto
+URL-only deployed model,0.7245569320135143,0.04221204188481675,0.11973208464228557,0.9549081462237892,0.6750623114259477,0.2930604748786567,0.031877213695395513,0.029519896193771628
